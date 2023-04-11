@@ -1,0 +1,33 @@
+.portfolio-menu{
+    position: absolute;
+    display:flex;
+    gap:10%;
+    margin: 5% auto;
+    width:95vw;
+    height: 2%;
+    left: 0px;
+    background-color: $main-color;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:10px;
+    p{
+        display:inline;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        color: #FFFFFF;
+    }
+    .download-cv{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        border: none;
+        background: $secondary-color;
+        border-radius: 10px;
+        padding:10px;
+    }
+}

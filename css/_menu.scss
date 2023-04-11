@@ -1,0 +1,31 @@
+.menu-items{
+    width: 100%;
+    left: 0px;
+    bottom:0;
+    z-index:999;
+    position:fixed;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+
+    ul{
+        display:flex;
+        justify-content: space-evenly;
+        display:flex;
+        background-color:$main-color;
+        border-radius: 10px;
+        
+        li{
+            padding: 19.5px 10px;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: #FFFFFF;
+                
+            }
+        }
+    }
+}
