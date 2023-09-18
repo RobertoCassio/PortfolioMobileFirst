@@ -45,6 +45,21 @@
   font-size: 16px;
   line-height: 24px;
 }
+@media (min-width: 0) {
+  .menu-items {
+    font-size: 10px;
+  }
+}
+@media (min-width: 480px) {
+  .menu-items {
+    font-size: 16px;
+  }
+}
+@media (min-width: 720px) {
+  .menu-items {
+    font-size: 24px;
+  }
+}
 .menu-items ul {
   display: flex;
   justify-content: space-evenly;
@@ -82,8 +97,6 @@ body {
   display: block;
   height: 100vh;
   width: 100vw;
-  background-image: url("../img/background-light.png");
-  background-repeat: no-repeat;
   box-sizing: border-box;
   padding: 0 10vh;
 }
@@ -104,7 +117,7 @@ body {
 .social-media-button-wrap {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .social-media-button-wrap button {
   background: #D9D9D9;
@@ -121,6 +134,7 @@ body {
   display: block;
   width: 100vw;
   height: 100vh;
+  border: 1px solid red;
 }
 .about-me-container .about-me {
   text-align: center;
@@ -133,6 +147,9 @@ body {
   background: #7D7676;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+}
+.about-me-container .skills {
+  margin-top: 10vh;
 }
 .about-me-container .about-text-wrap {
   width: 85%;
@@ -148,11 +165,10 @@ body {
 }
 .about-me-container .about-skills {
   width: 90%;
-  margin: 0 auto;
+  margin: 10% auto;
   height: 62px;
   background: rgba(125, 118, 118, 0.5);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
 }
 .about-me-container .about-skills .skillimg {
   height: 42px;
@@ -194,7 +210,8 @@ body {
 }
 .projects .project-wrap .project-text {
   display: flex;
-  height: 116px;
+  height: 65%;
+  width: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   font-family: "Poppins";
@@ -204,6 +221,11 @@ body {
   line-height: 18px;
   text-align: center;
 }
+@media (min-width: 720px) {
+  .projects .project-wrap .project-text {
+    font-size: 18px;
+  }
+}
 .projects .project-more {
   display: flex;
   margin: 10% auto;
@@ -212,15 +234,38 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
+@media (min-width: 720px) {
+  .projects .project-more {
+    font-size: 24px;
+  }
+}
 .projects .project-more img {
   margin: 0 auto;
   width: 34px;
 }
 
-.contact-container {
-  height: 100vh;
+.contact {
   width: 100vw;
+  height: 10vh;
+}
+.contact h1 {
+  text-align: center;
+}
+
+.contact-wrap {
   background-color: #D9D9D9;
+}
+
+.contact-container {
+  background-color: #D9D9D9;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 720px) {
+  .contact-container {
+    flex-direction: row;
+  }
 }
 .contact-container h1 {
   text-align: center;
@@ -232,6 +277,11 @@ body {
   flex-direction: column;
   margin: 0 auto 100px;
   align-items: center;
+}
+@media (min-width: 720px) {
+  .contact-container .contact-wrapper {
+    margin-top: 25vh;
+  }
 }
 .contact-container .contact-wrapper h4 {
   font-weight: 700;

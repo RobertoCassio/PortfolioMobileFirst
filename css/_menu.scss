@@ -9,6 +9,16 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    @include extrasmall {
+        font-size: 10px;
+    }
+    @include small{
+        font-size: 16px;
+    }
+    @include medium{
+        font-size:24px;
+    }
+
 
 
     ul{
