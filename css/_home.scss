@@ -1,3 +1,7 @@
+$main-color: #00ADB5;
+$secondary-color:#D9D9D9;
+$terciary-color: #7D7676;
+$background-color: hsl(300, 11%, 96%);
 html{
 	scroll-behavior: smooth;
 }
@@ -14,6 +18,7 @@ body{
     flex-direction: column;
  
 }
+
 .home-container{
     display:block;
 	height: 100vh;
@@ -23,31 +28,52 @@ body{
     //background-size:100%;
 	box-sizing: border-box;
 	padding: 0 10vh;
-}
-
-.role{
-    position:relative;
-    text-align: center;
-    width:100%;
-    margin:30vh auto 0;
-    font-size:1rem;
-    line-height: 41px;
-    letter-spacing: 0px;
-    .namespan{
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    .container{
+        position:relative;
+        height:10vh;
+        height:100%;
+        overflow:hidden;
+        .dot{
+            background-color:rgb(32, 36, 36);
+            position: absolute;
+            opacity:0.8;
+            border-radius:20%;
+            box-shadow: 0px 0px 15px 0px rgb(24, 36, 209);
+            z-index: -1;
+        }
     }
 }
-.social-media-button-wrap{
+.main-content{
+    background-color: $background-color;
+    margin: 0 auto;
+    border-radius: 20%;
     position:relative;
-    display: flex;
-    justify-content: space-evenly;   
-    button{
-        background: $secondary-color;
-        border: 1px solid rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
-        width: 100px;
-        height: 40px;
-        font-weight: 600;
+    width: 60%;
+    .role{
+        position:relative;
+        text-align: center;
+        width:100%;
+        margin:30vh auto 0;
         font-size:1rem;
+        line-height: 41px;
+        letter-spacing: 0px;
+        .namespan{
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
     }
+    .social-media-button-wrap{
+        position:relative;
+        display: flex;
+        justify-content: space-evenly;   
+        button{
+            background: $secondary-color;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            width: 100px;
+            height: 40px;
+            font-weight: 600;
+            font-size:1rem;
+        }
+
+}
 }

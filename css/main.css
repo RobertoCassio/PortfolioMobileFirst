@@ -100,8 +100,29 @@ body {
   box-sizing: border-box;
   padding: 0 10vh;
 }
+.home-container .container {
+  position: relative;
+  height: 10vh;
+  height: 100%;
+  overflow: hidden;
+}
+.home-container .container .dot {
+  background-color: rgb(32, 36, 36);
+  position: absolute;
+  opacity: 0.8;
+  border-radius: 20%;
+  box-shadow: 0px 0px 15px 0px rgb(24, 36, 209);
+  z-index: -1;
+}
 
-.role {
+.main-content {
+  background-color: hsl(300, 11%, 96%);
+  margin: 0 auto;
+  border-radius: 20%;
+  position: relative;
+  width: 60%;
+}
+.main-content .role {
   position: relative;
   text-align: center;
   width: 100%;
@@ -110,16 +131,15 @@ body {
   line-height: 41px;
   letter-spacing: 0px;
 }
-.role .namespan {
+.main-content .role .namespan {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-.social-media-button-wrap {
+.main-content .social-media-button-wrap {
   position: relative;
   display: flex;
   justify-content: space-evenly;
 }
-.social-media-button-wrap button {
+.main-content .social-media-button-wrap button {
   background: #D9D9D9;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -133,8 +153,6 @@ body {
   background-color: #D9D9D9;
   display: block;
   width: 100vw;
-  height: 100vh;
-  border: 1px solid red;
 }
 .about-me-container .about-me {
   text-align: center;
@@ -149,7 +167,7 @@ body {
   border-radius: 10px;
 }
 .about-me-container .skills {
-  margin-top: 10vh;
+  margin-top: 1vh;
 }
 .about-me-container .about-text-wrap {
   width: 85%;
@@ -169,6 +187,11 @@ body {
   height: 62px;
   background: rgba(125, 118, 118, 0.5);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 720px) {
+  .about-me-container .about-skills {
+    margin: 5% auto;
+  }
 }
 .about-me-container .about-skills .skillimg {
   height: 42px;
